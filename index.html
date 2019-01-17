@@ -50,7 +50,7 @@
 			        <td>{{user.LNAME}}</td>
 			        <td>{{user.EMAIL}}</td>
 			        <td>
-			        	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit" ng-click="selectUser(user)">Edit</button>
+			        	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit" ng-click="selectUser(user, $index)">Edit</button>
 		        	</td>
 			        <td>
 			        	<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" ng-click="selectUser(user)">Delete</button>
@@ -144,7 +144,7 @@
 			    
 			    <div class="form-group">        
 			      <div class="col-sm-offset-2 col-sm-10">
-			        <button type="submit" class="btn btn-info" ng-click="updateUser(user)" data-dismiss="modal">Update</button>
+			        <button type="submit" class="btn btn-info" ng-click="updateUser(clickedUser)" data-dismiss="modal">Update</button>
 			      </div>
 			    </div>
 		  </form>
